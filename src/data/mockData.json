@@ -1,0 +1,236 @@
+{
+    "restaurants": [
+        {
+            "id": 1,
+            "name": "The Burger Joint",
+            "rating": 4.8,
+            "deliveryTime": "20-30 min",
+            "minOrder": 199,
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60",
+            "categories": [
+                "American",
+                "Burgers",
+                "Fast Food"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Sushi Master",
+            "rating": 4.9,
+            "deliveryTime": "35-45 min",
+            "minOrder": 499,
+            "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=500&q=60",
+            "categories": [
+                "Japanese",
+                "Sushi",
+                "Asian"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Pizza Paradise",
+            "rating": 4.5,
+            "deliveryTime": "15-25 min",
+            "minOrder": 249,
+            "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=500&q=60",
+            "categories": [
+                "Italian",
+                "Pizza",
+                "Comfort Food"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Spice Route",
+            "rating": 4.7,
+            "deliveryTime": "40-50 min",
+            "minOrder": 299,
+            "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=500&q=60",
+            "categories": [
+                "Indian",
+                "Curry",
+                "Vegetarian"
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Pizza",
+            "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=150&q=60"
+        },
+        {
+            "id": 2,
+            "name": "Burger",
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=150&q=60"
+        },
+        {
+            "id": 3,
+            "name": "Sushi",
+            "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=150&q=60"
+        },
+        {
+            "id": 4,
+            "name": "Healthy",
+            "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=150&q=60"
+        },
+        {
+            "id": 5,
+            "name": "Italian",
+            "image": "https://images.unsplash.com/photo-1498579150354-977475b7ea0b?auto=format&fit=crop&w=150&q=60"
+        },
+        {
+            "id": 6,
+            "name": "Dessert",
+            "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=150&q=60"
+        }
+    ],
+    "offers": [
+        {
+            "id": 1,
+            "title": "50% OFF",
+            "description": "On all sushi orders over ₹500",
+            "code": "SUSHI50",
+            "image": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=500&q=60",
+            "bg": "bg-gradient-to-r from-orange-600 to-red-600"
+        },
+        {
+            "id": 2,
+            "title": "FREE DELIVERY",
+            "description": "On your first 3 orders",
+            "code": "FREEDEL",
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=60",
+            "bg": "bg-gradient-to-r from-green-600 to-teal-600"
+        },
+        {
+            "id": 3,
+            "title": "20% CASHBACK",
+            "description": "Start your day right",
+            "code": "MORNING",
+            "image": "https://images.unsplash.com/photo-1493770348161-369560ae357d?auto=format&fit=crop&w=500&q=60",
+            "bg": "bg-gradient-to-r from-gray-900 to-gray-800"
+        }
+    ],
+    "menuItems": [
+        {
+            "id": 101,
+            "restaurantId": 1,
+            "name": "Classic Cheeseburger",
+            "description": "Angus beef, cheddar, lettuce, tomato, house sauce",
+            "price": 199,
+            "category": "Burger",
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=60",
+            "popular": true
+        },
+        {
+            "id": 102,
+            "restaurantId": 1,
+            "name": "Bacon BBQ Burger",
+            "description": "Crispy bacon, onion rings, bbq sauce",
+            "price": 249,
+            "category": "Burger",
+            "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=500&q=60",
+            "popular": false
+        },
+        {
+            "id": 201,
+            "restaurantId": 2,
+            "name": "Spicy Tuna Roll",
+            "description": "Fresh tuna, spicy mayo, cucumber",
+            "price": 349,
+            "category": "Sushi",
+            "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=500&q=60",
+            "popular": true
+        },
+        {
+            "id": 202,
+            "restaurantId": 2,
+            "name": "Dragon Roll",
+            "description": "Eel, cucumber, avocado, tobiko",
+            "price": 599,
+            "category": "Sushi",
+            "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=500&q=60",
+            "popular": true
+        },
+        {
+            "id": 301,
+            "restaurantId": 3,
+            "name": "Pepperoni Feast",
+            "description": "Double pepperoni, mozzarella, tomato sauce",
+            "price": 449,
+            "category": "Pizza",
+            "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=500&q=60",
+            "popular": true
+        },
+        {
+            "id": 302,
+            "restaurantId": 3,
+            "name": "Margherita",
+            "description": "Fresh basil, mozzarella, olive oil",
+            "price": 349,
+            "category": "Pizza",
+            "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=500&q=60",
+            "popular": false
+        },
+        {
+            "id": 401,
+            "restaurantId": 4,
+            "name": "Chicken Tikka Masala",
+            "description": "Roasted chicken chunks in spicy sauce",
+            "price": 299,
+            "category": "Healthy",
+            "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=500&q=60",
+            "popular": true
+        },
+        {
+            "id": 501,
+            "restaurantId": 5,
+            "name": "Avocado Toast",
+            "description": "Sourdough bread, mashed avocado, poached egg",
+            "price": 249,
+            "category": "Healthy",
+            "image": "https://images.unsplash.com/photo-1588137372309-8b6f9136c70d?auto=format&fit=crop&w=500&q=60",
+            "popular": true
+        },
+        {
+            "id": 502,
+            "restaurantId": 5,
+            "name": "Quinoa Salad",
+            "description": "Quinoa, cherry tomatoes, cucumber, lemon dressing",
+            "price": 279,
+            "category": "Healthy",
+            "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=60",
+            "popular": false
+        },
+        {
+            "id": 601,
+            "restaurantId": 6,
+            "name": "Carbonara",
+            "description": "Spaghetti, pancetta, egg yolk, pecorino",
+            "price": 399,
+            "category": "Italian",
+            "image": "https://images.unsplash.com/photo-1574868352513-39f5c5314776?auto=format&fit=crop&w=500&q=60",
+            "popular": true
+        },
+        {
+            "id": 602,
+            "restaurantId": 6,
+            "name": "Tiramisu",
+            "description": "Coffee-flavoured Italian dessert",
+            "price": 199,
+            "category": "Dessert",
+            "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=500&q=60",
+            "popular": false
+        },
+        {
+            "id": 701,
+            "restaurantId": 1,
+            "name": "Chocolate Lava Cake",
+            "description": "Molten chocolate cake with vanilla ice cream",
+            "price": 179,
+            "category": "Dessert",
+            "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=500&q=60",
+            "popular": true
+        }
+    ]
+}
