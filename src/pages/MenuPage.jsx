@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { api } from '../services/api';
 import Button from '../components/common/Button';
+import DishModal from '../components/common/DishModal';
 import { Search, Filter, Star, Plus } from 'lucide-react';
 
 const MenuPage = () => {
@@ -9,6 +10,7 @@ const MenuPage = () => {
     const [categories, setCategories] = useState([]);
     const [activeCategory, setActiveCategory] = useState('All');
     const [searchQuery, setSearchQuery] = useState('');
+    const [selectedDish, setSelectedDish] = useState(null);
     const location = useLocation();
 
     useEffect(() => {
@@ -84,7 +86,11 @@ const MenuPage = () => {
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     {filteredItems.map(item => (
-                        <div key={item.id} className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full">
+                        <div
+                            key={item.id}
+                            onClick={() => setSelectedDish(item)}
+                            className="bg-white rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full cursor-pointer"
+                        >
                             <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4">
                                 <img src={item.image} alt={item.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                                 {item.popular && (
@@ -100,7 +106,13 @@ const MenuPage = () => {
                             <p className="text-gray-500 text-sm mb-6 line-clamp-2 flex-grow">{item.description}</p>
 
                             <div className="mt-auto">
-                                <Button className="w-full flex items-center justify-center gap-2 !py-2">
+                                <Button
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        // Add to cart logic here
+                                    }}
+                                    className="w-full flex items-center justify-center gap-2 !py-2"
+                                >
                                     <Plus className="w-4 h-4" /> Add to Cart
                                 </Button>
                             </div>
@@ -108,6 +120,12 @@ const MenuPage = () => {
                     ))}
                 </div>
             </div>
+
+            <DishModal
+                dish={selectedDish}
+                isOpen={!!selectedDish}
+                onClose={() => setSelectedDish(null)}
+            />
         </div>
     );
 };
